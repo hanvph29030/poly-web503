@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Thêm mới film</h1>
+    <form action="/movies" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="">
+                Title: 
+                <input type="text" placeholder="Name of film..." name="title">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Year: 
+                <input type="number" placeholder="Year of manufacture..." name="year">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                File:
+                <input type="file" name="image">
+            </label>
+        </div>
+        <button type="submit">Thêm</button>
+    </form>
+</body>
+</html>
